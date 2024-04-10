@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 using Cargold;
-
+using Cargold.Infinite;
 
 [System.Serializable]
 public class UserData : Cargold.FrameWork.UserData_C

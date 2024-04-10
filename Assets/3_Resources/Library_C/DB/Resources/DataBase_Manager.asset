@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1d5fc18fbf431a499903ae151278195, type: 3}
+  m_Name: DataBase_Manager
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  define_C: {fileID: 11400000, guid: d66b22e36c3dcfa4fb1fe04aaf9355a1, type: 2}
+  ui_C: {fileID: 11400000, guid: ff4630a154614b744a6b8b56c4df8911, type: 2}
+  sound_C: {fileID: 11400000, guid: 98d1ce6d7f33a7d4490f0c6bb34cbaaa, type: 2}
+  log_C: {fileID: 11400000, guid: b2017c2bf3c80f040a0c76ff4cce8cd5, type: 2}
+  dataGroupSobjPath: 
+  isCatched: 1
+  printLogType: 1073741824
+  localize: {fileID: 11400000, guid: 8b14e9711445c7d4c93a45486351fac4, type: 2}
+  table_Define: {fileID: 11400000, guid: 57f51aa748e67d348bef500c97497d06, type: 2}

@@ -5,6 +5,7 @@ using Sirenix.OdinInspector;
 using Cargold;
 using Cargold.Remocon;
 using Cargold.FrameWork;
+using Cargold.Infinite;
 
 public class UserSystem_Manager : Cargold.FrameWork.UserSystem_Manager
 {

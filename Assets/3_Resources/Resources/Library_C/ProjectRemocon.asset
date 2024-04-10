@@ -15,15 +15,16 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 4b6f7739c584fe6449836778ab7f5481, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
     - Name: database
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 0
     - Name: tableImporter
       Entry: 6
       Data: 
@@ -45,7 +46,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  userData: {fileID: 0}
+  userData: {fileID: 7747886323385358974, guid: 9c8be0917b79e2b47b1b738e570460a3, type: 3}
   tableImportRemoconList: []
   buildSystem:
     defaultDefineArr:
