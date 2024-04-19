@@ -115,3 +115,5 @@ MonoBehaviour:
   - Define_1
   - Define_2
   - Define_3
+  player_MoveSpeed_DB: 3
+  player_GetGange_DB: 1.5
