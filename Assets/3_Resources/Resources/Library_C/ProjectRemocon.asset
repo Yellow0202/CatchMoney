@@ -47,7 +47,9 @@ MonoBehaviour:
       Entry: 8
       Data: 
   userData: {fileID: 7747886323385358974, guid: 9c8be0917b79e2b47b1b738e570460a3, type: 3}
-  tableImportRemoconList: []
+  tableImportRemoconList:
+  - remoconID: 0
+    tableNameStr: "\uBA54\uC778"
   buildSystem:
     defaultDefineArr:
     - ODIN_INSPECTOR

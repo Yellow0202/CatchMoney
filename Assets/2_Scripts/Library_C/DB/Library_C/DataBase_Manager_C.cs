@@ -26,6 +26,17 @@ public partial class DataBase_Manager : Cargold.FrameWork.DataBase_Manager
     [SerializeField] private Debug_C.PrintLogType printLogType = Debug_C.PrintLogType.Common;
     #region Variable
     
+    [InlineEditor, LabelText("Item_Info"), SerializeField] private DB_Item_InfoDataGroup item_Info;
+    public DB_Item_InfoDataGroup GetItem_Info
+    {
+        get
+        {
+            if (this.item_Info == null)
+                this.item_Info = Resources.Load<DB_Item_InfoDataGroup>(base.dataGroupSobjPath + "DB_Item_InfoDataGroup");
+
+            return this.item_Info;
+        }
+    }
     [InlineEditor, LabelText("Localize"), SerializeField] private DB_LocalizeDataGroup localize;
     public DB_LocalizeDataGroup GetLocalize
     {
@@ -65,6 +76,7 @@ public partial class DataBase_Manager : Cargold.FrameWork.DataBase_Manager
             Debug_C.Init_Func(this);
 
             
+            this.item_Info.Init_Func();
             this.localize.Init_Func();
             this.table_Define.Init_Func();
         }
@@ -73,6 +85,7 @@ public partial class DataBase_Manager : Cargold.FrameWork.DataBase_Manager
 #if UNITY_EDITOR
     public override void CallEdit_OnDataImport_Func(bool _isDataImport = true)
     {
+        this.GetItem_Info.CallEdit_OnDataImportDone_Func();
         this.GetLocalize.CallEdit_OnDataImportDone_Func();
         this.GetTable_Define.CallEdit_OnDataImportDone_Func();
         

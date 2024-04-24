@@ -12,6 +12,8 @@ public partial class DB_Table_DefineDataGroup
     [SerializeField, FoldoutGroup("플레이어"), LabelText("캐릭터 기본 이동속도")] private float player_MoveSpeed_DB; public float _player_MoveSpeed_DB => this.player_MoveSpeed_DB;
     [SerializeField, FoldoutGroup("플레이어"), LabelText("캐릭터 기본 습득범위")] private float player_GetGange_DB; public float _player_GetGange_DB => this.player_GetGange_DB;
 
+    [SerializeField, FoldoutGroup("스프라이트"), LabelText("골드 아이템")] private Sprite sprite_Gold_Item; public Sprite _sprite_Gold_Item => this._sprite_Gold_Item;
+    [SerializeField, FoldoutGroup("스프라이트"), LabelText("회복 아이템")] private Sprite sprite_Recovery_Item; public Sprite _sprite_Recovery_Item => this._sprite_Recovery_Item;
     protected override void Init_Project_Func()
     {
         base.Init_Project_Func();

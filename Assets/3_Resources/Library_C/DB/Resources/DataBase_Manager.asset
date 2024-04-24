@@ -28,5 +28,6 @@ MonoBehaviour:
   dataGroupSobjPath: 
   isCatched: 1
   printLogType: 1073741824
+  item_Info: {fileID: 11400000, guid: d7e788f67c65f454cb66f39bdd8f48c1, type: 2}
   localize: {fileID: 11400000, guid: 8b14e9711445c7d4c93a45486351fac4, type: 2}
   table_Define: {fileID: 11400000, guid: 57f51aa748e67d348bef500c97497d06, type: 2}

@@ -34,12 +34,92 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Lo_ItemName_1
+    - Name: $v
+      Entry: 7
+      Data: 2|LocalizeData, Assembly-CSharp
+    - Name: Key
+      Entry: 1
+      Data: Lo_ItemName_1
+    - Name: ko
+      Entry: 1
+      Data: "\uACE8\uB4DC"
+    - Name: en
+      Entry: 1
+      Data: 
+    - Name: Jp
+      Entry: 1
+      Data: 
+    - Name: Ch
+      Entry: 1
+      Data: 
+    - Name: TW
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Lo_ItemName_2
+    - Name: $v
+      Entry: 7
+      Data: 3|LocalizeData, Assembly-CSharp
+    - Name: Key
+      Entry: 1
+      Data: Lo_ItemName_2
+    - Name: ko
+      Entry: 1
+      Data: "\uD68C\uBCF5"
+    - Name: en
+      Entry: 1
+      Data: 
+    - Name: Jp
+      Entry: 1
+      Data: 
+    - Name: Ch
+      Entry: 1
+      Data: 
+    - Name: TW
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 
     - Name: 
       Entry: 8
       Data: 
-  dataArr: []
-  keyArr: []
+  dataArr:
+  - Key: Lo_ItemName_1
+    ko: "\uACE8\uB4DC"
+    en: 
+    Jp: 
+    Ch: 
+    TW: 
+  - Key: Lo_ItemName_2
+    ko: "\uD68C\uBCF5"
+    en: 
+    Jp: 
+    Ch: 
+    TW: 
+  keyArr:
+  - Lo_ItemName_1
+  - Lo_ItemName_2
