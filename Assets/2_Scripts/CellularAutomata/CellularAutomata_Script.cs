@@ -22,7 +22,9 @@ public class CellularAutomata_Script : MonoBehaviour
     private const int ROAD = 0;
     private const int WALL = 1;
 
-    [SerializeField] private Tilemap tilemap;
+    [SerializeField] private Tilemap roadTilemap;
+    [SerializeField] private Tilemap wallTilemap;
+
     [SerializeField] private Tile roadTile;
     [SerializeField] private Tile wallTile;
     [SerializeField] private Color[] colors;
@@ -48,7 +50,8 @@ public class CellularAutomata_Script : MonoBehaviour
     [Button("눌림")]
     private void GenerateMap()
     {
-        tilemap.ClearAllTiles();
+        roadTilemap.ClearAllTiles();
+        wallTilemap.ClearAllTiles();
 
         map = new int[width, height];
         MapRandomFill();
@@ -115,11 +118,17 @@ public class CellularAutomata_Script : MonoBehaviour
     private void SetTileColor(int x, int y, Vector3Int pos)
     {
         //Vector3Int pos = new Vector3Int(-width / 2 + x, -height / 2 + y, 0); //화면 중앙 정렬
-        tilemap.SetTileFlags(pos, TileFlags.None); //타일 색상을 수정하기 위해 TileFlags를 None으로 설정
+        //tilemap.SetTileFlags(pos, TileFlags.None); //타일 색상을 수정하기 위해 TileFlags를 None으로 설정
         switch (map[x, y])
         {
-            case ROAD: tilemap.SetTile(pos, roadTile); break;
-            case WALL: tilemap.SetTile(pos, wallTile); break;
+            case ROAD:
+                roadTilemap.SetTile(pos, roadTile);
+                wallTilemap.SetTile(pos, null);
+                break;
+            case WALL:
+                wallTilemap.SetTile(pos, wallTile);
+                roadTilemap.SetTile(pos, null);
+                break;
             //case ROAD: tilemap.SetColor(pos, colors[0]); break;
             //case WALL: tilemap.SetColor(pos, colors[1]); break;
         }
@@ -132,8 +141,14 @@ public class CellularAutomata_Script : MonoBehaviour
 
         switch (map[x, y])
         {
-            case ROAD: tilemap.SetTile(pos, roadTile); break;
-            case WALL: tilemap.SetTile(pos, wallTile); break;
+            case ROAD:
+                roadTilemap.SetTile(pos, roadTile);
+                wallTilemap.SetTile(pos, null);
+                break;
+            case WALL:
+                wallTilemap.SetTile(pos, wallTile);
+                roadTilemap.SetTile(pos, null);
+                break;
         }
     }
 }
